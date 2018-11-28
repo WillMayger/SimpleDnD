@@ -7,7 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rm -rf build && mkdir build && cp dev/simple-dnd.css build/simple-dnd.css && babel dev/SimpleDnD.js --out-file build/SimpleDnD.js"
   },
-  "repo": "https://github.com/WillMayger/SimpleDnD",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/WillMayger/SimpleDnD.git"
+  },
   "keywords": [
     "DnD",
     "Drag",
