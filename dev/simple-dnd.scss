@@ -1,0 +1,46 @@
+.tiles {
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex: 100%;
+  width: 100%;
+
+  .dnd-container-box {
+    cursor: pointer;
+    pointer-events: none;
+    flex: 50%;
+    width: 100%;
+    max-width: 50%;
+    transition: 0.3s all;
+
+    @media(min-width: 1140px) {
+      flex: 33.333333%;
+      max-width: 33.333333%;
+    }
+  }
+
+  &.draggable {
+    .dnd-container-box {
+      background: rgba(0,0,0,0.1);
+      border-radius: 5px;
+    }
+  }
+
+  .tile {
+    display: block;
+    width: 100%;
+    pointer-events: auto;
+    transition: 0.3s all;
+    
+    &:hover {
+      transform: scale(0.98);
+    }
+    
+    .tile-inner {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "name": "simplednd",
+  "version": "1.0.6",
+  "description": "A simple drag and drop component for React.js",
+  "main": "build/SimpleDnD.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -rf build && mkdir build && cp dev/simple-dnd.css build/simple-dnd.css && babel dev/SimpleDnD.js --out-file build/SimpleDnD.js"
+  },
+  "keywords": [
+    "DnD",
+    "Drag",
+    "and",
+    "Drop",
+    "React",
+    "JavaScript",
+    "js",
+    "ES6",
+    "Simple"
+  ],
+  "author": "Will Mayger",
+  "license": "ISC",
+  "peerDependencies": {
+    "react": "^16.6.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.5",
+    "@babel/core": "^7.1.6",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/preset-env": "^7.1.6",
+    "@babel/preset-react": "^7.0.0",
+    "eslint": "^5.9.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1"
+  },
+  "dependencies": {
+    "prop-types": "^15.6.2",
+    "react": "^16.6.3"
+  }
+}
