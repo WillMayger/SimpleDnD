@@ -75,12 +75,16 @@ export default class SimpleDnD extends React.Component {
         {
           LastTileTemplate !== null ? (
             <div
-              className="tile last-tile"
+              className="dnd-container-box"
             >
-              <div className="tile-inner last-tile">
-                <LastTileTemplate />
+              <div
+                className="tile last-tile"
+              >
+                <div className="tile-inner last-tile">
+                  <LastTileTemplate />
+                </div>
               </div>
-            </div>
+          </div>
           ) : (null)
         }
       </div>

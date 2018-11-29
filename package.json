@@ -1,6 +1,6 @@
 {
   "name": "simplednd",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "A simple drag and drop component for React.js",
   "main": "build/SimpleDnD.js",
   "scripts": {
