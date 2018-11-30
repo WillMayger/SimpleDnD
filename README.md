@@ -1,6 +1,6 @@
 # SimpleDnD - Simple Drag and Drop
 
-#### A simple drag and drop component for react that is actually intuive and easy to use.
+#### A simple drag and drop component for react that is actually intuitive and easy to use.
 
 ## Contents.
  - Guide
