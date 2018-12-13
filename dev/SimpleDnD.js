@@ -10,7 +10,7 @@ export default class SimpleDnD extends React.Component {
     salt: 'abc',
   }
 
-  componentWillMount() {
+  componentDidMount() {
     this.setState({ salt: uuidv1() });
   }
 
