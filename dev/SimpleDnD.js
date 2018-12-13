@@ -1,12 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
+import uuidv1 from 'uuid/v1';
 import './simple-dnd.css';
 
 export default class SimpleDnD extends React.Component {
   state = {
     dragging: 0,
     draggable: false,
+    salt: 'abc',
+  }
+
+  componentWillMount() {
+    this.setState({ salt: uuidv1() });
   }
 
   // Event to be fired when an element is being dragged
@@ -43,6 +48,7 @@ export default class SimpleDnD extends React.Component {
   render() {
     const {
       draggable,
+      salt,
     } = this.state;
 
     const {
@@ -56,6 +62,7 @@ export default class SimpleDnD extends React.Component {
         {
             someArray.map((item, i) => (
               <div
+                key={`simplednd-${i}-${salt}`}
                 className="dnd-container-box"
                 onDragOver={() => this.onDragOver(i)}
               >

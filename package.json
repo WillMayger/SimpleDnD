@@ -1,6 +1,6 @@
 {
   "name": "simplednd",
-  "version": "1.0.9",
+  "version": "1.0.11",
   "description": "A simple drag and drop component for React.js",
   "main": "build/SimpleDnD.js",
   "scripts": {
@@ -8,8 +8,8 @@
     "build": "rm -rf build && mkdir build && cp dev/simple-dnd.css build/simple-dnd.css && babel dev/SimpleDnD.js --out-file build/SimpleDnD.js"
   },
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/WillMayger/SimpleDnD.git"
+    "type": "git",
+    "url": "https://github.com/WillMayger/SimpleDnD.git"
   },
   "keywords": [
     "DnD",
@@ -41,6 +41,7 @@
   },
   "dependencies": {
     "prop-types": "^15.6.2",
-    "react": "^16.6.3"
+    "react": "^16.6.3",
+    "uuid": "^3.3.2"
   }
 }
